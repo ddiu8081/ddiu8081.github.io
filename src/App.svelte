@@ -3,19 +3,12 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Hey. I'm Diu.</h1>
+	<h2>An Front-End Engineer (Web, Native iOS).</h2>
+	<a href="https://github.com/ddiu8081">Github</a>
 </main>
 
 <style lang="scss" global>
-	body {
-    font: 400 16px/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei,
-      Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-  }
-
 	a {
     text-decoration: none;
   }
@@ -27,27 +20,38 @@
     vertical-align: baseline;
   }
 
-  ul, ol {
-    list-style: none;
+	body {
+    font: 400 16px/1.8 'Ubuntu', PingFang SC, Lantinghei SC, Microsoft Yahei,
+      Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    margin: 0;
+    padding: 10vh 10vw;
+    min-height: 100vh;
   }
 
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
 	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+		font-size: 3.2rem;
+		color: #515151;
+		font-weight: bold;
+		margin-bottom: 0.2rem;
 	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
+	h2, p {
+		font-size: 1.6rem;
+		color: #cccccc;
+	}
+
+	a {
+		display: inline-block;
+		margin-top: 2.4rem;
+		padding: 0.3rem 0.8rem;
+		background: rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		font-size: 1.2rem;
+		color: #999999;
+		transition: all 0.3s ease;
+		&:hover {
+			background: rgba(0, 0, 0, 0.6);
+			color: #ffffff;
 		}
 	}
 </style>
