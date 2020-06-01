@@ -20,3 +20,4 @@ jobs:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         publish_dir: ./public
         publish_branch: master
+        cname: ljl.li
