@@ -4,7 +4,8 @@
 
 <main>
 	<h1>Hey. I'm Diu.</h1>
-	<h2>An Front-End Engineer (Web, Native iOS).</h2>
+	<h2>An Front-End Engineer (Web, Native iOS) @DiDi.</h2>
+	<h2>Also made some Design-related work.</h2>
 	<a href="https://github.com/ddiu8081">Github</a>
 </main>
 
@@ -26,6 +27,7 @@
     margin: 0;
     padding: 10vh 10vw;
     min-height: 100vh;
+		box-sizing: border-box;
   }
 
 	h1 {
