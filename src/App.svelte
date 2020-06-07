@@ -13,6 +13,8 @@
 </main>
 
 <style lang="scss" global>
+	@import "css/variables";
+	
 	a {
     text-decoration: none;
   }
@@ -31,11 +33,12 @@
     padding: 10vh 10vw;
     min-height: 100vh;
 		box-sizing: border-box;
+		background: var(--color-background);
   }
 
 	h1 {
 		font-size: 2.4rem;
-		color: #333333;
+		color: var(--color-text-emphasize);
 		font-weight: bold;
 		margin-bottom: 1.6rem;
 		span {
@@ -45,7 +48,7 @@
 
 	p {
 		font-size: 1.4rem;
-		color: #515151;
+		color: var(--color-text);
 		margin-bottom: 0.5rem;
 	}
 
@@ -53,15 +56,14 @@
 		display: inline-block;
 		margin-top: 2.4rem;
 		padding: 0.3rem 0.8rem;
-		background: rgba(0, 0, 0, 0.06);
+		background: var(--color-decoration);
 		border-radius: 4px;
-		// border: 1px solid rgba(0, 0, 0, 0.06);
 		font-size: 1.1rem;
-		color: #999999;
+		color: var(--color-text-lighter);
 		transition: all 0.3s ease;
 		&:hover {
-			background: rgba(0, 0, 0, 0.6);
-			color: #ffffff;
+			background: var(--color-text);
+			color: var(--color-background);
 		}
 	}
 </style>

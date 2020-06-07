@@ -32,6 +32,9 @@ const iconsArr = icon ? icon.split(',') : []
       color: #000000;
       &.icon-apple {
         color: #000000;
+        @media (prefers-color-scheme: dark) {
+          color: #ffffff;
+        }
       }
       &.icon-h5 {
         color: #e44d27;
