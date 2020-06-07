@@ -47,20 +47,10 @@
 		color: #515151;
 		margin-bottom: 0.5rem;
 		span {
-			position: relative;
-			&:after {
-				position: absolute;
-				content: "";
-				top: 90%;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				transition: top 0.3s ease;
-				z-index: -1;
-				background-color: rgba(252, 145, 83, 0.5);
-			}
-			&:hover:after {
-				top: 60%;
+			box-shadow: inset 0 -0.2em rgba(252, 145, 83, 0.5);
+			&:hover {
+				transition: box-shadow .3s ease;
+    		box-shadow: inset 0 -0.7em rgba(252, 145, 83, 0.5);
 			}
 		}
 	}
