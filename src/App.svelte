@@ -1,11 +1,13 @@
 <script>
-	let name = 'Diu'
+	import helloWordArr from './hello'
+
+	let helloWord = helloWordArr[Math.floor((Math.random() * helloWordArr.length))]
 </script>
 
 <main>
-	<h1>Hey. I'm Diu.</h1>
-	<h2>An Front-End Engineer (Web, Native iOS) @DiDi.</h2>
-	<h2>Also made some Design-related work.</h2>
+	<h1><span>{helloWord},</span>我是Diu.</h1>
+	<p>主流泛前端开发工程师，就职于<span>滴滴出行</span>。</p>
+	<p>开发之外，也做一些设计领域的事。</p>
 	<a href="https://github.com/ddiu8081">Github</a>
 </main>
 
@@ -22,7 +24,7 @@
   }
 
 	body {
-    font: 400 16px/1.8 'Ubuntu', PingFang SC, Lantinghei SC, Microsoft Yahei,
+    font: 400 16px/1.6 PingFang SC, Lantinghei SC, Microsoft Yahei,
       Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
     margin: 0;
     padding: 10vh 10vw;
@@ -31,24 +33,46 @@
   }
 
 	h1 {
-		font-size: 3.2rem;
-		color: #515151;
+		font-size: 2.4rem;
+		color: #333333;
 		font-weight: bold;
-		margin-bottom: 0.2rem;
+		margin-bottom: 1.6rem;
+		span {
+			display: block;
+		}
 	}
 
-	h2, p {
-		font-size: 1.6rem;
-		color: #cccccc;
+	p {
+		font-size: 1.4rem;
+		color: #515151;
+		margin-bottom: 0.5rem;
+		span {
+			position: relative;
+			&:after {
+				position: absolute;
+				content: "";
+				top: 90%;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				transition: top 0.3s ease;
+				z-index: -1;
+				background-color: rgba(252, 145, 83, 0.5);
+			}
+			&:hover:after {
+				top: 60%;
+			}
+		}
 	}
 
 	a {
 		display: inline-block;
 		margin-top: 2.4rem;
 		padding: 0.3rem 0.8rem;
-		background: rgba(0, 0, 0, 0.1);
-		border-radius: 8px;
-		font-size: 1.2rem;
+		background: rgba(0, 0, 0, 0.06);
+		border-radius: 4px;
+		// border: 1px solid rgba(0, 0, 0, 0.06);
+		font-size: 1.1rem;
 		color: #999999;
 		transition: all 0.3s ease;
 		&:hover {
