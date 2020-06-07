@@ -1,12 +1,13 @@
 <script>
 	import helloWordArr from './hello'
+	import Highlight from './components/Highlight.svelte';
 
 	let helloWord = helloWordArr[Math.floor((Math.random() * helloWordArr.length))]
 </script>
 
 <main>
 	<h1><span>{helloWord},</span>我是Diu.</h1>
-	<p>主流泛前端开发工程师，就职于<span>滴滴出行</span>。</p>
+	<p>主流<Highlight icon="apple,h5" highlightClass="moegi">泛前端</Highlight>开发工程师，就职于<Highlight icon="didi" highlightClass="orange">滴滴出行</Highlight>。</p>
 	<p>开发之外，也做一些设计领域的事。</p>
 	<a href="https://github.com/ddiu8081">Github</a>
 </main>
@@ -46,13 +47,6 @@
 		font-size: 1.4rem;
 		color: #515151;
 		margin-bottom: 0.5rem;
-		span {
-			box-shadow: inset 0 -0.2em rgba(252, 145, 83, 0.5);
-			&:hover {
-				transition: box-shadow .3s ease;
-    		box-shadow: inset 0 -0.7em rgba(252, 145, 83, 0.5);
-			}
-		}
 	}
 
 	a {
