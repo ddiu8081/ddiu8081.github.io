@@ -29,7 +29,7 @@ export default {
         }),
       ],
 			css: css => {
-				css.write('public/build/bundle.css');
+				css.write('public/build/bundle.css', !production);
 			}
 		}),
 		resolve({
