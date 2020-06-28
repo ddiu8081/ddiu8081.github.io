@@ -8,8 +8,9 @@
 <main>
 	<h1><span>{helloWord},</span>我是Diu.</h1>
 	<p>主流<Highlight icon="apple,h5" highlightClass="moegi">泛前端</Highlight>开发工程师，就职于<Highlight icon="didi" highlightClass="orange">滴滴出行</Highlight>。</p>
-	<p>开发之外，也做一些设计领域的事。</p>
+	<p>也做一些小小的设计。</p>
 	<a href="https://github.com/ddiu8081">Github</a>
+	<a href="https://www.behance.net/ddiu8081">Behance</a>
 </main>
 
 <style lang="scss" global>
@@ -55,6 +56,7 @@
 	a {
 		display: inline-block;
 		margin-top: 2.4rem;
+		margin-right: 0.2rem;
 		padding: 0.3rem 0.8rem;
 		background: var(--color-decoration);
 		border-radius: 4px;
