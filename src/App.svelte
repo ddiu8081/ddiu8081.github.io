@@ -10,6 +10,7 @@
 	<p>主流<Highlight icon="apple,h5" highlightClass="moegi">泛前端</Highlight>开发工程师，就职于<Highlight icon="didi" highlightClass="orange">滴滴出行</Highlight>。</p>
 	<p>也做一些小小的设计。</p>
 	<a href="https://github.com/ddiu8081">Github</a>
+	<a href="https://notes.ljl.li">Blog</a>
 	<a href="https://www.instagram.com/dzpszied/">Instagram</a>
 	<a href="https://www.behance.net/ddiu8081">Behance</a>
 </main>
