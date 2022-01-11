@@ -13,6 +13,7 @@
 	<a href="https://notes.ljl.li">Blog</a>
 	<a href="https://www.instagram.com/dzpszied/">Instagram</a>
 	<a href="https://www.behance.net/ddiu8081">Behance</a>
+	<a href="https://space.bilibili.com/541993">Bilibili</a>
 </main>
 
 <style lang="scss" global>
